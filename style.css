@@ -57,7 +57,7 @@ body {
 .calc-display {
   padding: 20px 40px;
   background-color: var(--calc-display-background);
-  border-radius: 8px;
+  border-radius: 5px;
 }
 .display-container {
   padding: 12px;

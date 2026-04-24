@@ -102,6 +102,7 @@ button {
 }
 
 .calc-display {
+  font-size: 2rem;
   padding: 20px 40px;
   background-color: var(--calc-display-background);
   border-radius: 5px;

@@ -114,7 +114,7 @@ button {
 .main-container {
   display: flex;
   flex-direction: column;
-
+  box-shadow: hsla(0, 0%, 0%, 0.301) 0px 3px 8px;
   background-color: var(--calc-body-background);
   /* border: 2px solid red; */
   border-radius: 12px;

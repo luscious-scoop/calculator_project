@@ -21,6 +21,9 @@ body {
   justify-content: center;
   align-items: center;
 }
+button {
+  cursor: pointer;
+}
 
 .buttons-container {
   gap: 12px;
@@ -35,12 +38,20 @@ body {
   padding: 8px 16px;
 }
 .num-btn {
+  background-color: var(--calc-btn-background);
+  color: var(--text-color);
   border: 2px solid black;
-  cursor: pointer;
+
   font-family: "Roboto", sans-serif;
   flex: 1;
   font-size: 2rem;
   padding: 12px 16px;
+}
+.delete-btn {
+  background-color: #db504a;
+}
+.all-clear-btn {
+  background-color: #e3b505;
 }
 .number-btns {
   width: 100%;

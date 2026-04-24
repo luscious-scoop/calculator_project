@@ -23,6 +23,7 @@ body {
 }
 
 .buttons-container {
+  gap: 12px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,6 +36,10 @@ body {
 }
 .num-btn {
   padding: 12px;
+}
+.row {
+  display: flex;
+  gap: 8px;
 }
 .calc-display {
   padding: 12px 40px;

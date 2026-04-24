@@ -16,7 +16,38 @@
   <body>
     <div class="main-container" id="main-container">
       <div class="calc-display" id="calc-display"></div>
-      <div class="buttons-container" id="buttons-container"></div>
+      <div class="buttons-container" id="buttons-container">
+        <div class="reset-btns" id="reset-btns">
+          <button class="btn all-clear-btn" id="all-clear-btn">Clear</button>
+          <button class="btn delete-btn" id="delete-btn">Delete</button>
+        </div>
+        <div class="number-btns">
+          <div class="divide-sign-row">
+            <button class="num-btn">7</button>
+            <button class="num-btn">8</button>
+            <button class="num-btn">9</button>
+            <button class="num-btn" id="divide-operator">/</button>
+          </div>
+          <div class="multiply-sign-row">
+            <button class="num-btn">4</button>
+            <button class="num-btn">5</button>
+            <button class="num-btn">6</button>
+            <button class="num-btn" id="multiplication-operator">x</button>
+          </div>
+          <div class="subtraction-sign-row">
+            <button class="num-btn">1</button>
+            <button class="num-btn">2</button>
+            <button class="num-btn">3</button>
+            <button class="num-btn" id="subtraction-operator">-</button>
+          </div>
+          <div class="equality-sign-row">
+            <button class="num-btn">.</button>
+            <button class="num-btn">0</button>
+            <button class="num-btn" id="equality-operator">=</button>
+            <button class="num-btn" id="addition-operator">+</button>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="script.js"></script>
   </body>

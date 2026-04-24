@@ -85,6 +85,13 @@ button {
   background-color: #139a43;
   color: white;
 }
+#addition-operator:hover,
+#subtraction-operator:hover,
+#multiplication-operator:hover,
+#divide-operator:hover {
+  background-color: #4bb3fd;
+  color: white;
+}
 
 .row {
   /* border: 2px solid blue; */

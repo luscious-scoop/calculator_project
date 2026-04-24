@@ -33,6 +33,9 @@ body {
   font-size: 1.2rem;
   padding: 8px 16px;
 }
+.num-btn {
+  padding: 12px;
+}
 .calc-display {
   padding: 12px 40px;
   background-color: var(--calc-display-background);

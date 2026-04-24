@@ -45,7 +45,7 @@ body {
 }
 
 .calc-display {
-  padding: 12px 40px;
+  padding: 20px 40px;
   background-color: var(--calc-display-background);
   border-radius: 8px;
 }

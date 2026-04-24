@@ -36,7 +36,7 @@ button {
 
 .btn {
   font-size: 1.2rem;
-  padding: 12px 16px;
+  padding: 12px 20px;
 }
 .num-btn {
   background-color: var(--calc-btn-background);
@@ -66,6 +66,7 @@ button {
   display: flex;
   flex-direction: column;
 }
+
 .row {
   /* border: 2px solid blue; */
   width: 100%;

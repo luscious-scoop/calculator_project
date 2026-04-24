@@ -23,6 +23,7 @@ body {
 }
 button {
   cursor: pointer;
+  border-radius: 8px;
 }
 
 .buttons-container {
@@ -48,9 +49,11 @@ button {
   padding: 12px 16px;
 }
 .delete-btn {
+  border: none;
   background-color: #db504a;
 }
 .all-clear-btn {
+  border: none;
   background-color: #e3b505;
 }
 .number-btns {

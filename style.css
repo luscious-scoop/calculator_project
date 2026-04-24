@@ -58,11 +58,21 @@ button {
 }
 .delete-btn {
   border: none;
-  background-color: #db504a;
+  background-color: #e9190f;
+  transition: all 0.2s ease;
+}
+.delete-btn:hover {
+  background-color: hsla(3, 88%, 49%, 0.884);
+  transform: scale(1.1);
 }
 .all-clear-btn {
   border: none;
   background-color: #e3b505;
+  transition: all 0.2s ease;
+}
+.all-clear-btn:hover {
+  background-color: hsla(48, 96%, 45%, 0.836);
+  transform: scale(1.1);
 }
 .number-btns {
   width: 100%;

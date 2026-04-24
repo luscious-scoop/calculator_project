@@ -63,5 +63,6 @@ body {
 }
 .display-container,
 .buttons-container {
+  width: 350px;
   border-radius: 8px;
 }

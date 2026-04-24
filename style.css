@@ -1,3 +1,4 @@
+/*=====Reset + colors var*/
 :root {
   --body-background: #6699ff;
   --calc-body-background: #333333;
@@ -26,6 +27,11 @@ body {
   flex-direction: column;
   align-items: center;
   font-size: 24px;
+}
+
+.btn {
+  font-size: 1.2rem;
+  padding: 8px 16px;
 }
 .calc-display {
   padding: 12px 40px;

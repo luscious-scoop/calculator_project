@@ -26,5 +26,11 @@ body {
   font-size: 24px;
 }
 .calc-display {
+  padding: 12px;
   background-color: var(--calc-display-background);
+  border-radius: 8px;
+}
+.display-container {
+  padding: 24px;
+  background-color: #292020;
 }

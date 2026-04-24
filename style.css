@@ -54,6 +54,9 @@ body {
   background-color: #292020;
 }
 .main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   background-color: var(--calc-body-background);
   /* border: 2px solid red; */
   border-radius: 12px;

@@ -36,7 +36,7 @@ button {
 
 .btn {
   font-size: 1.2rem;
-  padding: 8px 16px;
+  padding: 12px 16px;
 }
 .num-btn {
   background-color: var(--calc-btn-background);
@@ -47,6 +47,9 @@ button {
   flex: 1;
   font-size: 2rem;
   padding: 12px 16px;
+}
+.reset-btns {
+  margin-top: 10px;
 }
 .delete-btn {
   border: none;
@@ -83,7 +86,7 @@ button {
 .main-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+
   background-color: var(--calc-body-background);
   /* border: 2px solid red; */
   border-radius: 12px;

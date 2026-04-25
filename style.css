@@ -38,7 +38,9 @@ button {
   font-size: 1.2rem;
   padding: 12px 20px;
 }
-.num-btn {
+.num-btn,
+.operators,
+#equality-operator {
   background-color: var(--calc-btn-background);
   color: var(--text-color);
   border: 2px solid black;
@@ -49,7 +51,9 @@ button {
   padding: 12px 16px;
   transition: all 0.2s ease;
 }
-.num-btn:hover {
+.num-btn:hover,
+.operators:hover,
+#equality-operator:hover {
   background-color: hsla(0, 0%, 95%, 0.863);
   transform: scale(1.1);
 }

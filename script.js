@@ -8,12 +8,22 @@ const decimalBtn = document.querySelector("#decimal-btn");
 let firstNumber = "";
 let secondNumber = "";
 let result = 0;
+let operator = "";
 
 function getFirstNumber() {
   numbersBtn.forEach((button) => {
     button.addEventListener("click", () => {
       firstNumber += button.textContent;
       console.log(firstNumber);
+    });
+  });
+}
+
+function getOperator() {
+  operatorsBtn.forEach((button) => {
+    button.addEventListener("click", () => {
+      operator = button.textContent;
+      console.log(operator);
     });
   });
 }

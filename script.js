@@ -6,6 +6,7 @@ const equalityBtn = document.querySelector("#equality-operator");
 const decimalBtn = document.querySelector("#decimal-btn");
 const deleteBtn = document.querySelector("#delete-btn");
 const clearBtn = document.querySelector("#all-clear-btn");
+const display = document.querySelector("#calc-display");
 
 let firstNumber = "";
 let secondNumber = "";

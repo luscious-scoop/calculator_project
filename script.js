@@ -9,6 +9,7 @@ let firstNumber = "";
 let secondNumber = "";
 let result = 0;
 let operator = "";
+let hasClicked = false;
 
 function getFirstNumber() {
   let number = "";
@@ -22,10 +23,12 @@ function getFirstNumber() {
 }
 
 function getOperator() {
+  hasClicked = true;
   let op = "";
   return operatorsBtn.forEach((button) => {
     button.addEventListener("click", () => {
       op = button.textContent;
+      console.log(op);
       return op;
     });
   });
@@ -60,11 +63,6 @@ function divide(num1, num2) {
 
 function getInputs() {
   operator = getOperator();
-  if (operator === "") {
-    firstNumber = getFirstNumber();
-  } else {
-    secondNumber = getSecondNumber();
-  }
 
   firstNumber = Number(firstNumber);
   secondNumber = Number(secondNumber);
@@ -89,3 +87,5 @@ equalityBtn.addEventListener("click", () => {
   operate();
   console.log(result);
 });
+
+getInputs();

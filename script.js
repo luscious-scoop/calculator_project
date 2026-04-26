@@ -69,3 +69,23 @@ function getInputs() {
   firstNumber = Number(firstNumber);
   secondNumber = Number(secondNumber);
 }
+function operate() {
+  switch (operator) {
+    case "+":
+      add(firstNumber, secondNumber);
+      break;
+    case "-":
+      subtract(firstNumber, secondNumber);
+      break;
+    case "x":
+      multiply(firstNumber, secondNumber);
+      break;
+    case "&#247;":
+      divide(firstNumber, secondNumber);
+      break;
+  }
+}
+equalityBtn.addEventListener("click", () => {
+  operate();
+  console.log(result);
+});

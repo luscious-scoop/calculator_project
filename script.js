@@ -11,28 +11,33 @@ let result = 0;
 let operator = "";
 
 function getFirstNumber() {
-  numbersBtn.forEach((button) => {
+  let number = "";
+  return numbersBtn.forEach((button) => {
     button.addEventListener("click", () => {
-      firstNumber += button.textContent;
-      console.log(firstNumber);
+      number += button.textContent;
+      console.log(number);
+      return number;
     });
   });
 }
 
 function getOperator() {
-  operatorsBtn.forEach((button) => {
+  let op = "";
+  return operatorsBtn.forEach((button) => {
     button.addEventListener("click", () => {
-      operator = button.textContent;
-      console.log(operator);
+      op = button.textContent;
+      return op;
     });
   });
 }
 
 function getSecondNumber() {
-  numbersBtn.forEach((button) => {
+  let number = "";
+  return numbersBtn.forEach((button) => {
     button.addEventListener("click", () => {
-      secondNumber += button.textContent;
-      console.log(secondNumber);
+      number += button.textContent;
+      console.log(number);
+      return number;
     });
   });
 }

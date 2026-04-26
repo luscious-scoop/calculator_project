@@ -63,6 +63,11 @@ function divide(num1, num2) {
 
 function getInputs() {
   operator = getOperator();
+  if (!hasClicked) {
+    firstNumber = getFirstNumber();
+  } else {
+    secondNumber = getSecondNumber();
+  }
 
   firstNumber = Number(firstNumber);
   secondNumber = Number(secondNumber);

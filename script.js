@@ -59,3 +59,20 @@ equalityBtn.addEventListener("click", () => {
   operate();
   console.log(result);
 });
+
+function getNumbers(number) {
+  if (!hasClicked) {
+    firstNumber += number;
+    console.log(firstNumber);
+  } else {
+    secondNumber += number;
+  }
+  firstNumber = Number(firstNumber);
+  secondNumber = Number(secondNumber);
+}
+
+numbersBtn.forEach((button) => {
+  button.addEventListener("click", () => {
+    getNumbers(button.textContent);
+  });
+});

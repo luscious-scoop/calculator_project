@@ -27,3 +27,12 @@ function getOperator() {
     });
   });
 }
+
+function getSecondNumber() {
+  numbersBtn.forEach((button) => {
+    button.addEventListener("click", () => {
+      secondNumber += button.textContent;
+      console.log(secondNumber);
+    });
+  });
+}

@@ -17,6 +17,7 @@ let hasClicked = false;
 function getOperator(op) {
   operator = op;
   hasClicked = true;
+  display.textContent = `${firstNumber} ${operator}`;
 }
 operatorsBtn.forEach((button) => {
   button.addEventListener("click", () => {
@@ -52,23 +53,25 @@ function operate() {
     case "x":
       multiply(firstNumber, secondNumber);
       break;
-    case "&#247;":
+    default:
       divide(firstNumber, secondNumber);
       break;
   }
 }
 equalityBtn.addEventListener("click", () => {
   operate();
-  console.log(result);
+  display.textContent = `${result}`;
 });
 
 function getNumbers(number) {
   if (!hasClicked) {
     firstNumber += number;
     console.log(firstNumber);
+    display.textContent = `${firstNumber}`;
   } else {
     secondNumber += number;
     console.log(secondNumber);
+    display.textContent = `${firstNumber} ${operator} ${secondNumber}`;
   }
   firstNumber = Number(firstNumber);
   secondNumber = Number(secondNumber);

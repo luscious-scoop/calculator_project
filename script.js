@@ -4,6 +4,8 @@ const numbersBtn = document.querySelectorAll(".num-btn");
 const operatorsBtn = document.querySelectorAll(".operators");
 const equalityBtn = document.querySelector("#equality-operator");
 const decimalBtn = document.querySelector("#decimal-btn");
+const deleteBtn = document.querySelector("#delete-btn");
+const clearBtn = document.querySelector("#all-clear-btn");
 
 let firstNumber = "";
 let secondNumber = "";

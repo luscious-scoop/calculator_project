@@ -97,3 +97,12 @@ numbersBtn.forEach((button) => {
     getNumbers(button.textContent);
   });
 });
+
+function clearAll() {
+  firstNumber = "";
+  secondNumber = "";
+  result = 0;
+  display.textContent = "0";
+  hasClicked = false;
+}
+clearBtn.addEventListener("click", clearAll);

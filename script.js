@@ -57,3 +57,15 @@ function multiply(num1, num2) {
 function divide(num1, num2) {
   result = num1 / num2;
 }
+
+function getInputs() {
+  operator = getOperator();
+  if (operator === "") {
+    firstNumber = getFirstNumber();
+  } else {
+    secondNumber = getSecondNumber();
+  }
+
+  firstNumber = Number(firstNumber);
+  secondNumber = Number(secondNumber);
+}

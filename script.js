@@ -11,17 +11,16 @@ let result = 0;
 let operator = "";
 let hasClicked = false;
 
-function getOperator() {
+function getOperator(op) {
+  operator = op;
   hasClicked = true;
-  let op = "";
-  return operatorsBtn.forEach((button) => {
-    button.addEventListener("click", () => {
-      op = button.textContent;
-      console.log(op);
-      return op;
-    });
-  });
 }
+operatorsBtn.forEach((button) => {
+  button.addEventListener("click", () => {
+    getOperator(button.textContent);
+    console.log(operator);
+  });
+});
 
 function add(num1, num2) {
   result = num1 + num2;
@@ -66,6 +65,7 @@ function getNumbers(number) {
     console.log(firstNumber);
   } else {
     secondNumber += number;
+    console.log(secondNumber);
   }
   firstNumber = Number(firstNumber);
   secondNumber = Number(secondNumber);

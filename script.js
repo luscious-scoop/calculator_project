@@ -11,17 +11,6 @@ let result = 0;
 let operator = "";
 let hasClicked = false;
 
-function getFirstNumber() {
-  let number = "";
-  return numbersBtn.forEach((button) => {
-    button.addEventListener("click", () => {
-      number += button.textContent;
-      console.log(number);
-      return number;
-    });
-  });
-}
-
 function getOperator() {
   hasClicked = true;
   let op = "";
@@ -30,17 +19,6 @@ function getOperator() {
       op = button.textContent;
       console.log(op);
       return op;
-    });
-  });
-}
-
-function getSecondNumber() {
-  let number = "";
-  return numbersBtn.forEach((button) => {
-    button.addEventListener("click", () => {
-      number += button.textContent;
-      console.log(number);
-      return number;
     });
   });
 }
@@ -61,17 +39,6 @@ function divide(num1, num2) {
   result = num1 / num2;
 }
 
-function getInputs() {
-  operator = getOperator();
-  if (!hasClicked) {
-    firstNumber = getFirstNumber();
-  } else {
-    secondNumber = getSecondNumber();
-  }
-
-  firstNumber = Number(firstNumber);
-  secondNumber = Number(secondNumber);
-}
 function operate() {
   switch (operator) {
     case "+":
@@ -92,5 +59,3 @@ equalityBtn.addEventListener("click", () => {
   operate();
   console.log(result);
 });
-
-getInputs();

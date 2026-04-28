@@ -14,17 +14,25 @@ let result = 0;
 let operator = "";
 let hasClicked = false;
 
-function getOperator(op) {
-  operator = op;
-  hasClicked = true;
+numbersBtn.forEach((button) => {
+  button.addEventListener("click", () => {
+    getNumbers(button.textContent);
+  });
+});
 
-  display.textContent = `${firstNumber} ${operator}`;
-}
 operatorsBtn.forEach((button) => {
   button.addEventListener("click", () => {
     getOperator(button.textContent);
     console.log(operator);
   });
+});
+
+equalityBtn.addEventListener("click", () => {
+  operate();
+  if (!Number.isInteger(result)) {
+    result = result.toFixed(1);
+  }
+  display.textContent = `${result}`;
 });
 
 function add(num1, num2) {
@@ -42,32 +50,6 @@ function multiply(num1, num2) {
 function divide(num1, num2) {
   result = num1 / num2;
 }
-
-function operate() {
-  firstNumber = Number(firstNumber);
-  secondNumber = Number(secondNumber);
-  switch (operator) {
-    case "+":
-      add(firstNumber, secondNumber);
-      break;
-    case "-":
-      subtract(firstNumber, secondNumber);
-      break;
-    case "x":
-      multiply(firstNumber, secondNumber);
-      break;
-    default:
-      divide(firstNumber, secondNumber);
-      break;
-  }
-}
-equalityBtn.addEventListener("click", () => {
-  operate();
-  if (!Number.isInteger(result)) {
-    result = result.toFixed(1);
-  }
-  display.textContent = `${result}`;
-});
 
 function getNumbers(number) {
   if (!hasClicked) {
@@ -90,11 +72,31 @@ function getNumbers(number) {
   }
 }
 
-numbersBtn.forEach((button) => {
-  button.addEventListener("click", () => {
-    getNumbers(button.textContent);
-  });
-});
+function getOperator(op) {
+  operator = op;
+  hasClicked = true;
+
+  display.textContent = `${firstNumber} ${operator}`;
+}
+
+function operate() {
+  firstNumber = Number(firstNumber);
+  secondNumber = Number(secondNumber);
+  switch (operator) {
+    case "+":
+      add(firstNumber, secondNumber);
+      break;
+    case "-":
+      subtract(firstNumber, secondNumber);
+      break;
+    case "x":
+      multiply(firstNumber, secondNumber);
+      break;
+    default:
+      divide(firstNumber, secondNumber);
+      break;
+  }
+}
 
 function clearAll() {
   firstNumber = "";

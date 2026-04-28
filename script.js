@@ -22,6 +22,11 @@ numbersBtn.forEach((button) => {
 
 operatorsBtn.forEach((button) => {
   button.addEventListener("click", () => {
+    if (secondNumber !== "") {
+      operate(firstNumber, secondNumber);
+      firstNumber = result;
+      secondNumber = "";
+    }
     getOperator(button.textContent);
     console.log(operator);
   });

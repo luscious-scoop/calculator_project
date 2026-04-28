@@ -118,3 +118,34 @@ function clearAll() {
   hasClicked = false;
 }
 clearBtn.addEventListener("click", clearAll);
+
+function backSpace() {
+  if (result !== 0) {
+    clearAll();
+  } else if (secondNumber !== "") {
+    secondNumber = String(secondNumber).split("");
+    if (secondNumber.length !== 1) {
+      secondNumber.pop();
+
+      secondNumber = secondNumber.join("");
+    } else {
+      secondNumber = "";
+    }
+    display.textContent = `${firstNumber} ${operator} ${secondNumber}`;
+  } else if (operator !== "") {
+    operator = "";
+    display.textContent = `${firstNumber} ${operator} ${secondNumber}`;
+  } else if (firstNumber !== "") {
+    firstNumber = String(firstNumber).split("");
+    if (firstNumber.length !== 1) {
+      firstNumber.pop();
+      console.log(typeof firstNumber);
+      firstNumber = firstNumber.join("");
+      display.textContent = `${firstNumber} ${operator} ${secondNumber}`;
+    } else {
+      clearAll();
+    }
+  }
+}
+
+deleteBtn.addEventListener("click", backSpace);

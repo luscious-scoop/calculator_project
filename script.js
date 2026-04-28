@@ -120,6 +120,7 @@ function clearAll() {
 clearBtn.addEventListener("click", clearAll);
 
 function backSpace() {
+  decimalBtn.disabled = false;
   if (result !== 0 && display.textContent === `${result}`) {
     clearAll();
   } else if (secondNumber !== "") {

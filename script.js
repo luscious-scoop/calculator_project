@@ -28,7 +28,12 @@ operatorsBtn.forEach((button) => {
 });
 
 equalityBtn.addEventListener("click", () => {
-  operate();
+  if (display.textContent === `${result}`) {
+    operate(result, secondNumber);
+  } else {
+    operate();
+  }
+
   if (!Number.isInteger(result)) {
     result = result.toFixed(1);
   }
@@ -79,7 +84,9 @@ function getOperator(op) {
   display.textContent = `${firstNumber} ${operator}`;
 }
 
-function operate() {
+function operate(num1 = firstNumber, num2 = secondNumber) {
+  firstNumber = num1;
+  secondNumber = num2;
   firstNumber = Number(firstNumber);
   secondNumber = Number(secondNumber);
   switch (operator) {

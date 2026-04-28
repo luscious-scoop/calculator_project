@@ -85,8 +85,6 @@ function getNumbers(number) {
     console.log(secondNumber);
     if (secondNumber.includes(".")) {
       decimalBtn.disabled = true;
-    } else {
-      decimalBtn.disabled = false;
     }
     display.textContent = `${firstNumber} ${operator} ${secondNumber}`;
   }

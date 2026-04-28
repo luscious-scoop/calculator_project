@@ -120,7 +120,7 @@ function clearAll() {
 clearBtn.addEventListener("click", clearAll);
 
 function backSpace() {
-  if (result !== 0) {
+  if (result !== 0 && display.textContent === `${result}`) {
     clearAll();
   } else if (secondNumber !== "") {
     secondNumber = String(secondNumber).split("");

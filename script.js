@@ -35,8 +35,10 @@ operatorsBtn.forEach((button) => {
 equalityBtn.addEventListener("click", () => {
   if (display.textContent === `${result}`) {
     operate(result, secondNumber);
-  } else {
+  } else if (firstNumber && operator && secondNumber) {
     operate();
+  } else {
+    return;
   }
 
   if (!Number.isInteger(result)) {

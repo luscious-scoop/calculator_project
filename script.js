@@ -116,6 +116,7 @@ function operate(num1 = firstNumber, num2 = secondNumber) {
       subtract(firstNumber, secondNumber);
       break;
     case "x":
+    case "*":
       multiply(firstNumber, secondNumber);
       break;
     case "÷":

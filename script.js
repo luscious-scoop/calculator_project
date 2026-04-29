@@ -172,3 +172,42 @@ function performOperation() {
   }
   display.textContent = `${result}`;
 }
+
+document.body.addEventListener("keydown", (e) => {
+  switch (e.key) {
+    case "0":
+      getNumbers(e.key);
+      break;
+    case "1":
+      getNumbers(e.key);
+      break;
+    case "2":
+      getNumbers(e.key);
+      break;
+    case "3":
+      getNumbers(e.key);
+      break;
+    case "4":
+      getNumbers(e.key);
+      break;
+    case "5":
+      getNumbers(e.key);
+      break;
+
+    case "6":
+      getNumbers(e.key);
+      break;
+
+    case "7":
+      getNumbers(e.key);
+      break;
+
+    case "8":
+      getNumbers(e.key);
+      break;
+
+    case "9":
+      getNumbers(e.key);
+      break;
+  }
+});

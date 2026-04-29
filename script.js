@@ -67,7 +67,9 @@ function getNumbers(number) {
   }
   if (!hasClicked) {
     firstNumber += number;
+
     console.log(firstNumber);
+
     if (firstNumber.includes(".")) {
       decimalBtn.disabled = true;
     } else {
@@ -76,7 +78,9 @@ function getNumbers(number) {
     display.textContent = `${firstNumber}`;
   } else {
     decimalBtn.disabled = false;
+
     secondNumber += number;
+
     console.log(secondNumber);
     if (secondNumber.includes(".")) {
       decimalBtn.disabled = true;

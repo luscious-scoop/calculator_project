@@ -27,7 +27,7 @@ operatorsBtn.forEach((button) => {
   });
 });
 
-equalityBtn.addEventListener("click", performOperation);
+equalityBtn.addEventListener("click", performCalculation);
 
 function add(num1, num2) {
   result = num1 + num2;
@@ -157,7 +157,7 @@ function operatorEvent(buttonText) {
   console.log(operator);
 }
 
-function performOperation() {
+function performCalculation() {
   if (display.textContent === `${result}`) {
     operate(result, secondNumber);
   } else if (firstNumber && operator && secondNumber) {
@@ -232,5 +232,11 @@ document.body.addEventListener("keydown", (e) => {
     case "/":
       operatorEvent(e.key);
       break;
+  }
+});
+
+document.body.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    performCalculation();
   }
 });

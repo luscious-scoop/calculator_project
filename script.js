@@ -131,6 +131,7 @@ function backSpace() {
     display.textContent = `${firstNumber} ${operator} ${secondNumber}`;
   } else if (operator !== "") {
     operator = "";
+    hasClicked = false;
     display.textContent = `${firstNumber} ${operator} ${secondNumber}`;
   } else if (firstNumber !== "") {
     firstNumber = String(firstNumber).split("");

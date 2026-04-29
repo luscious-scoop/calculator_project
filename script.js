@@ -40,7 +40,10 @@ equalityBtn.addEventListener("click", () => {
   }
 
   if (!Number.isInteger(result)) {
-    result = result.toFixed(2);
+    if (result === Infinity) {
+      alert("Nope");
+      clearAll();
+    }
   }
   display.textContent = `${result}`;
 });

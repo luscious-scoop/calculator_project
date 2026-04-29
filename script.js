@@ -43,6 +43,8 @@ equalityBtn.addEventListener("click", () => {
     if (result === Infinity) {
       alert("Nope");
       clearAll();
+    } else {
+      result = result.toFixed(2);
     }
   }
   display.textContent = `${result}`;
@@ -114,8 +116,11 @@ function operate(num1 = firstNumber, num2 = secondNumber) {
     case "x":
       multiply(firstNumber, secondNumber);
       break;
-    default:
+    case "÷":
       divide(firstNumber, secondNumber);
+      break;
+    default:
+      clearAll();
       break;
   }
 }

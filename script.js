@@ -23,13 +23,7 @@ numbersBtn.forEach((button) => {
 
 operatorsBtn.forEach((button) => {
   button.addEventListener("click", () => {
-    if (secondNumber !== "") {
-      operate(firstNumber, secondNumber);
-      firstNumber = result;
-      secondNumber = "";
-    }
-    getOperator(button.textContent);
-    console.log(operator);
+    operatorEvent(button.textContent);
   });
 });
 
@@ -152,6 +146,16 @@ function backSpace() {
 }
 
 deleteBtn.addEventListener("click", backSpace);
+
+function operatorEvent(buttonText) {
+  if (secondNumber !== "") {
+    operate(firstNumber, secondNumber);
+    firstNumber = result;
+    secondNumber = "";
+  }
+  getOperator(buttonText);
+  console.log(operator);
+}
 
 function performOperation() {
   if (display.textContent === `${result}`) {

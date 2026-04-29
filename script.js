@@ -213,6 +213,10 @@ document.body.addEventListener("keydown", (e) => {
     case "9":
       getNumbers(e.key);
       break;
+
+    case ".":
+      getNumbers(e.key);
+      break;
   }
 });
 

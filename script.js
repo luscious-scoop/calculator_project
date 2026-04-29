@@ -62,6 +62,9 @@ function divide(num1, num2) {
 }
 
 function getNumbers(number) {
+  if (result !== 0 && display.textContent === `${result}`) {
+    clearAll();
+  }
   if (!hasClicked) {
     firstNumber += number;
     console.log(firstNumber);

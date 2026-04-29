@@ -32,25 +32,7 @@ operatorsBtn.forEach((button) => {
   });
 });
 
-equalityBtn.addEventListener("click", () => {
-  if (display.textContent === `${result}`) {
-    operate(result, secondNumber);
-  } else if (firstNumber && operator && secondNumber) {
-    operate();
-  } else {
-    return;
-  }
-
-  if (!Number.isInteger(result)) {
-    if (result === Infinity) {
-      alert("Nope");
-      clearAll();
-    } else {
-      result = result.toFixed(2);
-    }
-  }
-  display.textContent = `${result}`;
-});
+equalityBtn.addEventListener("click", performOperation);
 
 function add(num1, num2) {
   result = num1 + num2;
@@ -169,3 +151,23 @@ function backSpace() {
 }
 
 deleteBtn.addEventListener("click", backSpace);
+
+function performOperation() {
+  if (display.textContent === `${result}`) {
+    operate(result, secondNumber);
+  } else if (firstNumber && operator && secondNumber) {
+    operate();
+  } else {
+    return;
+  }
+
+  if (!Number.isInteger(result)) {
+    if (result === Infinity) {
+      alert("Nope");
+      clearAll();
+    } else {
+      result = result.toFixed(2);
+    }
+  }
+  display.textContent = `${result}`;
+}

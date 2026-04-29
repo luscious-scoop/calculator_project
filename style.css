@@ -38,6 +38,7 @@ button {
   font-size: 1.2rem;
   padding: 12px 20px;
 }
+
 .num-btn,
 .operators,
 #equality-operator {
@@ -51,33 +52,40 @@ button {
   padding: 12px 16px;
   transition: all 0.2s ease;
 }
+
 .num-btn:hover,
 .operators:hover,
 #equality-operator:hover {
   background-color: hsla(0, 0%, 95%, 0.863);
   transform: scale(1.1);
 }
+
 .reset-btns {
   margin-top: 12px;
 }
+
 .delete-btn {
   border: none;
   background-color: #86bbd8;
   transition: all 0.2s ease;
 }
+
 .delete-btn:hover {
   background-color: hsla(220, 100%, 70%, 0.877);
   transform: scale(1.1);
 }
+
 .all-clear-btn {
   border: none;
   background-color: #e3b505;
   transition: all 0.2s ease;
 }
+
 .all-clear-btn:hover {
   background-color: hsla(48, 96%, 45%, 0.836);
   transform: scale(1.1);
 }
+
 .number-btns {
   width: 100%;
   /* border: 2px solid yellow; */
@@ -85,6 +93,7 @@ button {
   display: flex;
   flex-direction: column;
 }
+
 #equality-operator:hover {
   background-color: #139a43;
   color: white;
@@ -110,6 +119,7 @@ button {
   padding: 20px 40px;
   background-color: var(--calc-display-background);
   border-radius: 5px;
+  overflow: hidden;
 }
 .display-container {
   padding: 20px;

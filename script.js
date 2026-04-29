@@ -215,3 +215,22 @@ document.body.addEventListener("keydown", (e) => {
       break;
   }
 });
+
+document.body.addEventListener("keydown", (e) => {
+  switch (e.key) {
+    case "+":
+      operatorEvent(e.key);
+      break;
+    case "-":
+      operatorEvent(e.key);
+      break;
+
+    case "*":
+      operatorEvent(e.key);
+      break;
+
+    case "/":
+      operatorEvent(e.key);
+      break;
+  }
+});

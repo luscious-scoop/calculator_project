@@ -216,7 +216,12 @@ document.body.addEventListener("keydown", (e) => {
       break;
 
     case ".":
-      getNumbers(e.key);
+      if (hasClicked === false && !firstNumber.includes(".")) {
+        getNumbers(e.key);
+      } else if (hasClicked === true && !secondNumber.includes(".")) {
+        getNumbers(e.key);
+      }
+
       break;
   }
 });

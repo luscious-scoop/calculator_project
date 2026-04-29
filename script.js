@@ -117,6 +117,7 @@ function operate(num1 = firstNumber, num2 = secondNumber) {
       multiply(firstNumber, secondNumber);
       break;
     case "÷":
+    case "/":
       divide(firstNumber, secondNumber);
       break;
     default:

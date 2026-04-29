@@ -240,3 +240,15 @@ document.body.addEventListener("keydown", (e) => {
     performCalculation();
   }
 });
+
+document.body.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") {
+    clearAll();
+  }
+});
+
+document.body.addEventListener("keydown", (e) => {
+  if (e.key === "Backspace") {
+    backSpace();
+  }
+});
